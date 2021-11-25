@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Key Signature Practice</title>
+	    <link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+	    <h1 id="title" class="text">Key Signature Online Practice</h1>
+	    <p id="accuracy">Accuracy: not enough data</p>
+
+	    <img id="keysignature" src="Data/C_Major.png" alt="There should be an image of a key signature here"></img>
+	    <div>
+	    	<p class="text">What is the key signature?</p>
+	    	<input type="text" id="guess" class="input" autocomplete="off" minlength="1" maxlength="1"/>
+	    </div>
+	    <select class="dropdown" id="accidental" name="accidentals">
+	    	<option class="drop-item" value="">Natural ♮</option>
+			<option class="drop-item" value="b">Flat ♭</option>
+			<option class="drop-item" value="s">Sharp ♯</option>
+		</select>
+	    <button id="check" class="button" onclick="check()">Check</button>
+	    <p id="answer-message">.</p>
+	    <button id="check" class="button" onclick="next()" style="background-color:limegreen;">Next</button>
+
+		<script src="index.js"></script>
+	</body>
+</html>
