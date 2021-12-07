@@ -9,19 +9,56 @@
 	    <h1 id="title" class="text">Key Signature Online Practice</h1>
 	    <p id="accuracy">Accuracy: not enough data</p>
 
-	    <img id="keysignature" src="Data/C_Major.png" alt="There should be an image of a key signature here"></img>
+	    <p id="key">C</p>
+	    <p class="text">What accidentals are in this key?</p>
+	    <p>BEADGCF</p>
 	    <div>
-	    	<p class="text">What is the key signature?</p>
-	    	<input type="text" id="guess" class="input" autocomplete="off" minlength="1" maxlength="1"/>
-	    </div>
-	    <select class="dropdown" id="accidental" name="accidentals">
-	    	<option class="drop-item" value="">Natural ♮</option>
-			<option class="drop-item" value="b">Flat ♭</option>
-			<option class="drop-item" value="s">Sharp ♯</option>
-		</select>
-	    <button id="check" class="button" onclick="check()">Check</button>
+			<div>
+			  	<span class="center">A</span>
+			    <input class="center" type="checkbox" name="ac" id="A-checkbox">
+			</div>
+		  
+			<div>
+				<span class="center">B</span>
+				<input class="center" type="checkbox" name="ac" id="B-checkbox">
+			</div>
+
+			<div>
+				<span class="center">C</span>
+				<input class="center" type="checkbox" name="ac" id="C-checkbox">
+			</div>
+
+			<div>
+				<span class="center">D</span>
+				<input class="center" type="checkbox" name="ac" id="D-checkbox">
+			</div>
+
+			<div>
+				<span class="center">E</span>
+				<input class="center" type="checkbox" name="ac" id="E-checkbox">
+			</div>
+
+			<div>
+				<span class="center">F</span>
+				<input class="center" type="checkbox" name="ac" id="F-checkbox">
+			</div>
+
+			<div>
+				<span class="center">G</span>
+				<input class="center" type="checkbox" name="ac" id="G-checkbox">
+			</div>
+		</div>	 
+
+		<form>
+			<label for="s">Sharp ♯</label>
+			<input type="radio" id="sharp-input" name="halfstep" value="s" checked="true">
+			<label for="b">Flat ♭</label>
+			<input type="radio" id="flat-input" name="halfstep" value="b">
+		</form>
+
+		<button id="check" class="button" onclick="check2()">Check</button>  
 	    <p id="answer-message">.</p>
-	    <button id="check" class="button" onclick="next()" style="background-color:limegreen;">Next</button>
+	    <button id="next" class="button" onclick="next2()" style="background-color:limegreen;">Next</button>
 
 		<script src="index.js"></script>
 	</body>

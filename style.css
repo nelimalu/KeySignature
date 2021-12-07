@@ -44,6 +44,10 @@ body {
 	font-size: 150%;
 }
 
+#key {
+	font-size: 1000%;
+}
+
 .button {
     cursor: pointer;
     outline: 0;
@@ -69,5 +73,18 @@ body {
 
 #answer-message {
 	color: ghostwhite;
+}
+
+.center {
+	text-align: center;
+}
+
+label {
+	width: 50%;
+}
+
+form {
+	display: inline-block;
+	margin: auto;
 }
 
